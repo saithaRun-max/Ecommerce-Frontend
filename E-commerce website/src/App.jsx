@@ -1,6 +1,16 @@
+import "./App.css";
+import Header from "./components/HeaderContainer/Header";
+
+
+import Logo from "./components/HeaderContainer/HeaderLeftContainer/Logo";
+
+
 const App = () => {
+
   return(
-    <div>Blinkit</div>
+    <div>
+      <Header />
+      </div>
   )
 
 };
