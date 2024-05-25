@@ -5,7 +5,7 @@ import HeaderRightContainer from './HeaderRightContainer/HeaderRightContainer';
 
 const Header = () => {
   return (
-    <div className='grid grid-cols-12 m-5 '>
+    <div className='grid grid-cols-12 mx-5 my-3'>
       <HeaderLeftContainer />
       <SearchBar />
       <HeaderRightContainer />

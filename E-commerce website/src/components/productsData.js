@@ -1,6 +1,6 @@
 
 
-export const products = [
+const productsData = [
     {
       productHeader: "Dairy, Bread & Eggs",
       productsList:[
@@ -9,7 +9,8 @@ export const products = [
             name:"Milky Mist Paneer",
             weight:"200 g",
             price:11700,
-            deletePrice:12500
+            deletePrice:12500,
+            offer:"8%"
 
         },
         {
@@ -36,14 +37,7 @@ export const products = [
             deletePrice:null
 
         },
-        {
-            imageId: "7514beed-37f7-4c8c-b50a-4b39842009b8.jpg",
-            name:"Amul Salted Butter",
-            weight:"500 g",
-            price:28500,
-            deletePrice:null
-
-        },
+       
         {
             imageId: "2341178f-dcdd-45fd-adea-eca03b9c5dd7.jpg",
             name:"Mother Dairy Malai Paneer",
@@ -57,7 +51,8 @@ export const products = [
             name:"Nandini Goodlife Toned Milk",
             weight:"1 l",
             price:6700,
-            deletePrice:null
+            deletePrice:null,
+            offer:"5%"
 
         },
         {
@@ -74,6 +69,15 @@ export const products = [
             weight:"30 pieces",
             price:26700,
             deletePrice:35000
+
+        },
+        {
+            imageId: "7514beed-37f7-4c8c-b50a-4b39842009b8.jpg",
+            name:"Amul Salted Butter",
+            weight:"500 g",
+            price:28500,
+            deletePrice:null,
+            offer:"20%"
 
         },
         {
@@ -103,7 +107,8 @@ export const products = [
               name:"Aashirvaad Select Atta",
               weight:"1 Kg",
               price:7000,
-              deletePrice:null
+              deletePrice:null,
+              offer:"12%"
   
           },
           {
@@ -127,7 +132,8 @@ export const products = [
               name:"Fortune Chakki Atta",
               weight:"1 Kg",
               price:7000,
-              deletePrice:null
+              deletePrice:null,
+              offer:"5%"
   
           },
           {
@@ -151,7 +157,8 @@ export const products = [
               name:"TATA Toor Dal",
               weight:"1 Kg",
               price:12000,
-              deletePrice:null
+              deletePrice:null,
+              offer:"10%"
   
           },
           {
@@ -162,6 +169,15 @@ export const products = [
               deletePrice:null
   
           },
+          {
+            imageId: "825d6577-b511-42d0-a5ee-a75fedc224ee.jpg",
+            name:"Aashirvaad Select Atta",
+            weight:"1 Kg",
+            price:7000,
+            deletePrice:null,
+            offer:"15%"
+
+        },
           {
               imageId: "84670885-0602-40aa-820d-13b8e5c18cad.jpg",
               name:"TATA Urad Dal",
@@ -179,7 +195,7 @@ export const products = [
 
         },
         {
-            imageId: "18c80b2f-2980-4c7b-9227-0a1e2f950b59.jpg",
+            imageId: "2a4d1fa9-3f50-4b58-8072-2599f7524f87.jpg",
             name:"Urad Dal slice",
             weight:"1 Kg",
             price:12000,
@@ -189,6 +205,14 @@ export const products = [
         {
             imageId: "cd99a9c1-8f03-41bb-beb4-f3b45c7aa101.jpg",
             name:"Black Dal",
+            weight:"1 Kg",
+            price:10000,
+            deletePrice:null
+
+        },
+        {
+            imageId: "84670885-0602-40aa-820d-13b8e5c18cad.jpg",
+            name:"TATA Urad Dal",
             weight:"1 Kg",
             price:10000,
             deletePrice:null
@@ -205,7 +229,8 @@ export const products = [
               name:"Red label",
               weight:"250 g",
               price:15500,
-              deletePrice:17500
+              deletePrice:17500,
+              offer:"8%"
   
           },
           {
@@ -221,7 +246,8 @@ export const products = [
               name:"TATA Tea Gold",
               weight:"400 g",
               price:25000,
-              deletePrice:null
+              deletePrice:null,
+              offer:"20%"
   
           },
           {
@@ -237,7 +263,8 @@ export const products = [
               name:"Nescafe Sunrise",
               weight:"500 g",
               price:52000,
-              deletePrice:null
+              deletePrice:null,
+              offer:"8%"
   
           },
           {
@@ -245,7 +272,8 @@ export const products = [
               name:"Levista Strong Coffe",
               weight:"200 g",
               price:32000,
-              deletePrice:null
+              deletePrice:null,
+              offer:"15%"
   
           },
           {
@@ -256,6 +284,15 @@ export const products = [
               deletePrice:null
   
           },
+          {
+            imageId: "5bfcc484-192a-4625-9ac5-93b895353250.jpg",
+            name:"TATA Tea Gold",
+            weight:"500 g",
+            price:28000,
+            deletePrice:null,
+            offer:"5%"
+
+        },
           {
               imageId: "875a3531-af99-435e-b3dc-1cebb9ade3b8.jpg",
               name:"Cothas Coffe",
@@ -296,6 +333,14 @@ export const products = [
             deletePrice:null
 
         },
+        {
+            imageId: "875a3531-af99-435e-b3dc-1cebb9ade3b8.jpg",
+            name:"Cothas Coffe",
+            weight:"250 g",
+            price:40000,
+            deletePrice:null
+
+        },
        
         {
             imageId: "a99ed09c-f8f4-4e37-9968-31a4ca0d5b32.jpg",
@@ -311,3 +356,5 @@ export const products = [
       },
     
 ]
+
+export default productsData;
