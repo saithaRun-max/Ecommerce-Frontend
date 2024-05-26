@@ -2,15 +2,16 @@ import React from "react";
 import { sliding_img_CDN } from "../../constants.js";
 import { LiaRupeeSignSolid } from "react-icons/lia";
 
-const ProductCard = ({ cardData }) => {
-  const { imageId, name, weight, price, deletePrice, noBorder } = cardData;
+const ProductCard = ({ cardData, noBorder }) => {
+  const { imageId, name, weight, price, deletePrice} = cardData;
+ 
 
   return (
     <>
       <div
         className={
-          "w-52 rounded-md px-3 pb-2 " +
-          (noBorder ? "border-none" : "border border-gray-300")
+          `w-52 h-[277px] rounded-md px-3 pb-2  +
+          ${noBorder ? 'border-none' : 'border border-gray-300'}`
         }
       >
         <img className="w-48" src={sliding_img_CDN + imageId} alt="card" />
