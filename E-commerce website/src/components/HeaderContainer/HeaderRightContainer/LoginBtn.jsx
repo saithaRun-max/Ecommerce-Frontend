@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
     <div>
-      <button className='mt-3 font-medium'>Login</button>
+      <Link to="/loginPage">
+        <button className="mt-3 font-medium">Login</button>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
