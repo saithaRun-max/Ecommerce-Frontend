@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
+    <div className="w-screen h-screen">
       <BrowserRouter>
         <Header />
         <Routes>
