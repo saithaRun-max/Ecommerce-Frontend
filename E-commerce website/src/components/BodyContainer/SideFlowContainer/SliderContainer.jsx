@@ -3,15 +3,17 @@ import ProductCard from "./ProductCard";
 import ProductOfferCard from "./ProductOfferCard";
 import productsData from "../../productsData.js";
 import CardShimmer from "../Shimmer ui/CardShimmer.jsx";
-
+import { useSelector } from "react-redux";
 
 const SliderContainer = () => {
   const [data, setData] = useState([]);
   const [showShimmer, setShowShimmer] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const { products } = useSelector((store) => store.products);
+
 
   useEffect(() => {
-    const timer = setTimeout(fetchData(productsData), 5000);
+    const timer = setTimeout(fetchData(products), 5000);
     const Scroll = window.addEventListener("scroll", handleScroll);
 
     return () => {

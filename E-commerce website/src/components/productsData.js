@@ -358,6 +358,5 @@ const productsData = [
 ]
 
 
-console.log([...productsData, ...productsData])
 
 export default productsData;

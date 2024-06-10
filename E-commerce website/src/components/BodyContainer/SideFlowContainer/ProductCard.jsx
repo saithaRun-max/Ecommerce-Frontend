@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { sliding_img_CDN } from "../../constants.js";
 import { LiaRupeeSignSolid } from "react-icons/lia";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../utils/cartSlice.js";
 
 const ProductCard = ({ cardData, noBorder }) => {
-  const { imageId, name, weight, price, deletePrice} = cardData;
- 
+  const dispatch = useDispatch();
+  const [changeText, setChangeText] = useState(false);
+
+  const { imageId, name, weight, price, deletePrice } = cardData;
+
+  const handleAddtoCart = (product) => {
+    setChangeText(true)
+    dispatch(addToCart(product));
+  };
 
   return (
     <>
       <div
-        className={
-          `w-52 h-[277px] rounded-md px-3 pb-2  +
-          ${noBorder ? 'border-none' : 'border border-gray-300'}`
-        }
+        className={`w-52 h-[277px] rounded-md px-3 pb-2  +
+          ${noBorder ? "border-none" : "border border-gray-300"}`}
       >
         <img className="w-48" src={sliding_img_CDN + imageId} alt="card" />
 
@@ -35,8 +42,11 @@ const ProductCard = ({ cardData, noBorder }) => {
               </div>
             )}
           </div>
-          <button className="border p-1 px-4 h-8   border-orange-400 rounded-md text-amber-600 font-semibold">
-            Add
+          <button
+            className="border p-1 px-4 h-8   border-orange-400 rounded-md text-amber-600 font-semibold hover:text-white hover:bg-amber-600"
+            onClick={() => handleAddtoCart(cardData)}
+          >
+            {"Add"}
           </button>
         </div>
       </div>
